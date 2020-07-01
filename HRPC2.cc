@@ -6,9 +6,11 @@
 #include "DetectorConstruction.hh"
 #include "PhysicsList.hh"
 #include "PrimaryGeneratorAction.hh"
+#include "FTFP_BERT_HP.hh"
 
 // To be able to use and combine the references physics lists
 #include "G4PhysListFactory.hh"
+#include "G4VModularPhysicsList.hh"
 
 #include "RunAction.hh"
 #include "TrackingAction.hh"
@@ -40,22 +42,22 @@ int main(int argc,char** argv) {
   DetectorConstruction*   det  = new DetectorConstruction();
   runManager->SetUserInitialization(det);
   
-  //const G4String plName = "FTFP_BERT_HP";
-  //G4PhysListFactory plFactory;
-  //G4VModularPhysicsList *pl = plFactory.GetReferencePhysList( plName );
-  PhysicsList*            pl = new PhysicsList();
+  const G4String plName = "FTFP_BERT_HP";
+  G4PhysListFactory plFactory;
+  G4VModularPhysicsList * pl = plFactory.GetReferencePhysList( plName );
+  //PhysicsList*            pl = new PhysicsList();
   runManager->SetUserInitialization(pl);
   
   //set user action classes
   //
   PrimaryGeneratorAction* kin   = new PrimaryGeneratorAction(det);  
-  RunAction*              run   = new RunAction(det,pl,kin);
+  RunAction*              run   = new RunAction(det,/*pl,*/kin);
   TrackingAction*         track = new TrackingAction(det,run);
   SteppingAction*         step  = new SteppingAction(det,run);
   
   runManager->SetUserAction(kin); 
   runManager->SetUserAction(run); 
-  runManager->SetUserAction(track);  
+  runManager->SetUserAction(track);
   runManager->SetUserAction(step);
 
   //initialize visualization

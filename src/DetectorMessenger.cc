@@ -1,34 +1,3 @@
-//
-// ********************************************************************
-// * License and Disclaimer                                           *
-// *                                                                  *
-// * The  Geant4 software  is  copyright of the Copyright Holders  of *
-// * the Geant4 Collaboration.  It is provided  under  the terms  and *
-// * conditions of the Geant4 Software License,  included in the file *
-// * LICENSE and available at  http://cern.ch/geant4/license .  These *
-// * include a list of copyright holders.                             *
-// *                                                                  *
-// * Neither the authors of this software system, nor their employing *
-// * institutes,nor the agencies providing financial support for this *
-// * work  make  any representation or  warranty, express or implied, *
-// * regarding  this  software system or assume any liability for its *
-// * use.  Please see the license in the file  LICENSE  and URL above *
-// * for the full disclaimer and the limitation of liability.         *
-// *                                                                  *
-// * This  code  implementation is the result of  the  scientific and *
-// * technical work of the GEANT4 collaboration.                      *
-// * By using,  copying,  modifying or  distributing the software (or *
-// * any work based  on the software)  you  agree  to acknowledge its *
-// * use  in  resulting  scientific  publications,  and indicate your *
-// * acceptance of all terms of the Geant4 Software license.          *
-// ********************************************************************
-//
-/// \file electromagnetic/TestEm7/src/DetectorMessenger.cc
-/// \brief Implementation of the DetectorMessenger class
-//
-//
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #include "DetectorMessenger.hh"
 
@@ -56,50 +25,101 @@ DetectorMessenger::DetectorMessenger(DetectorConstruction * Det)
  fTalDefCmd(nullptr),
  fTalPosiCmd(nullptr)
 { 
-  fTestemDir = new G4UIdirectory("/testem/");
+  fTestemDir = new G4UIdirectory("/hrpc/");
   fTestemDir->SetGuidance(" detector control.");
   
-  fDetDir = new G4UIdirectory("/testem/det/");
+  fDetDir = new G4UIdirectory("/hrpc/det/");
   fDetDir->SetGuidance("detector construction commands");
       
-  fMaterCmd = new G4UIcmdWithAString("/testem/det/setMat",this);
+  fMaterCmd = new G4UIcmdWithAString("/hrpc/det/setMat",this);
   fMaterCmd->SetGuidance("Select material of the box.");
   fMaterCmd->SetParameterName("choice",false);
   fMaterCmd->AvailableForStates(G4State_PreInit,G4State_Idle);
   
-  fWMaterCmd = new G4UIcmdWithAString("/testem/det/setWorldMat",this);
+  fWMaterCmd = new G4UIcmdWithAString("/hrpc/det/setWorldMat",this);
   fWMaterCmd->SetGuidance("Select material of the world.");
   fWMaterCmd->SetParameterName("choice",false);
   fWMaterCmd->AvailableForStates(G4State_PreInit,G4State_Idle);
   
-  fSizeXCmd = new G4UIcmdWithADoubleAndUnit("/testem/det/setSizeX",this);
+  fSizeXCmd = new G4UIcmdWithADoubleAndUnit("/hrpc/det/setSizeX",this);
   fSizeXCmd->SetGuidance("Set sizeX of the absorber");
   fSizeXCmd->SetParameterName("SizeX",false);
   fSizeXCmd->SetRange("SizeX>0.");
   fSizeXCmd->SetUnitCategory("Length");
   fSizeXCmd->AvailableForStates(G4State_PreInit);
   
-  fSizeYZCmd = new G4UIcmdWithADoubleAndUnit("/testem/det/setSizeYZ",this);
+  fSizeYZCmd = new G4UIcmdWithADoubleAndUnit("/hrpc/det/setSizeYZ",this);
   fSizeYZCmd->SetGuidance("Set sizeYZ of the absorber");
   fSizeYZCmd->SetParameterName("SizeYZ",false);
   fSizeYZCmd->SetRange("SizeYZ>0.");
   fSizeYZCmd->SetUnitCategory("Length");
   fSizeYZCmd->AvailableForStates(G4State_PreInit);
+
+  /////////////////////////////////////////////////////////////////////////
+
+  // UI command to set the GasGap thickness
+      fgapThicknessCMD = new G4UIcmdWithADoubleAndUnit("/hrpc/det/setGapThickness",this);
+      // set the description of the command
+      fgapThicknessCMD->SetGuidance("Sets the Thickness of the GasGap.");
+      // name = TagetSizeX; omittable=false i.e. user needs to supply a value
+      fgapThicknessCMD->SetParameterName("fgapThickness",false);
+      // set the aceptable range of the parameter value higher than zero
+      fgapThicknessCMD->SetRange("fgapThickness>0.");
+      // set the unit category to be length
+      fgapThicknessCMD->SetUnitCategory("Length");
+      // can be modified at PreInit and Idle state
+      fgapThicknessCMD->AvailableForStates(G4State_PreInit, G4State_Idle);
+      // in MT mode: do not need to be broadcasted for workers
+      fgapThicknessCMD->SetToBeBroadcasted(false);
+
+      // UI command to set the detector distance
+      ftrdRadioPositionCMD = new G4UIcmdWithADoubleAndUnit("/hrpc/det/setRPCRadioPos",this);
+      // set the description of the command
+      ftrdRadioPositionCMD->SetGuidance("Sets the Distance of the Detector.");
+      // name = TagetSizeX; omittable=false i.e. user needs to supply a value
+      ftrdRadioPositionCMD->SetParameterName("ftrdRadioPosition",false);
+      // set the aceptable range of the parameter value higher than zero
+      ftrdRadioPositionCMD->SetRange("ftrdRadioPosition>0.");
+      // set the unit category to be length
+      ftrdRadioPositionCMD->SetUnitCategory("Length");
+      // can be modified at PreInit and Idle state
+      ftrdRadioPositionCMD->AvailableForStates(G4State_PreInit, G4State_Idle);
+      // in MT mode: do not need to be broadcasted for workers
+      ftrdRadioPositionCMD->SetToBeBroadcasted(false);
+
+      // UI command to set the detector angle position
+      ftrdPhiPositionCMD = new G4UIcmdWithADoubleAndUnit("/hrpc/det/setRPCPhiPos",this);
+      // set the description of the command
+      ftrdPhiPositionCMD->SetGuidance("Sets the Angle of the Detector.");
+      // name = TagetSizeX; omittable=false i.e. user needs to supply a value
+      ftrdPhiPositionCMD->SetParameterName("ftrdPhiPosition",false);
+      // set the aceptable range of the parameter value higher than zero
+      ftrdPhiPositionCMD->SetRange("180>=ftrdPhiPosition>=0.");
+      // set the unit category to be angle
+      ftrdPhiPositionCMD->SetUnitCategory("Angle");
+      // can be modified at PreInit and Idle state
+      ftrdPhiPositionCMD->AvailableForStates(G4State_PreInit, G4State_Idle);
+      // in MT mode: do not need to be broadcasted for workers
+      ftrdPhiPositionCMD->SetToBeBroadcasted(false);
+
+
+  /////////////////////////////////////////////////////////////////////////
+
         
-  fMagFieldCmd = new G4UIcmdWithADoubleAndUnit("/testem/det/setField",this);  
+  fMagFieldCmd = new G4UIcmdWithADoubleAndUnit("/hrpc/det/setField",this);
   fMagFieldCmd->SetGuidance("Define magnetic field.");
   fMagFieldCmd->SetGuidance("Magnetic field will be in Z direction.");
   fMagFieldCmd->SetParameterName("Bz",false);
   fMagFieldCmd->SetUnitCategory("Magnetic flux density");
   fMagFieldCmd->AvailableForStates(G4State_PreInit,G4State_Idle);
   
-  fTalNbCmd = new G4UIcmdWithAnInteger("/testem/det/tallyNumber",this);
+  fTalNbCmd = new G4UIcmdWithAnInteger("/hrpc/det/tallyNumber",this);
   fTalNbCmd->SetGuidance("Set number of fTallies.");
   fTalNbCmd->SetParameterName("tallyNb",false);
   fTalNbCmd->SetRange("tallyNb>=0");
   fTalNbCmd->AvailableForStates(G4State_PreInit,G4State_Idle);
 
-  fTalDefCmd = new G4UIcommand("/testem/det/tallyDefinition",this);
+  fTalDefCmd = new G4UIcommand("/hrpc/det/tallyDefinition",this);
   fTalDefCmd->SetGuidance("Set tally nb, box dimensions.");
   fTalDefCmd->SetGuidance("  tally number : from 0 to tallyNumber");
   fTalDefCmd->SetGuidance("  material name");
@@ -133,7 +153,7 @@ DetectorMessenger::DetectorMessenger(DetectorConstruction * Det)
   //
   fTalDefCmd->AvailableForStates(G4State_PreInit);
 
-  fTalPosiCmd = new G4UIcommand("/testem/det/tallyPosition",this);
+  fTalPosiCmd = new G4UIcommand("/hrpc/det/tallyPosition",this);
   fTalPosiCmd->SetGuidance("Set tally nb, position");
   fTalPosiCmd->SetGuidance("  tally number : from 0 to tallyNumber");
   fTalPosiCmd->SetGuidance("  position (3-vector with unit)");
@@ -223,6 +243,26 @@ void DetectorMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
      vec *= G4UIcommand::ValueOf(unt);
      fDetector->SetTallyPosition(num,vec);
    }      
+
+
+  	  // set GasGap thickness
+    if (command == fgapThicknessCMD) {
+  	    G4double thickness = fgapThicknessCMD->GetNewDoubleValue(newValue);
+  	  fDetector->SetGasGapThickness(thickness);
+    }
+
+    // set detector distance
+    if (command == ftrdRadioPositionCMD) {
+  	    G4double distance = ftrdRadioPositionCMD->GetNewDoubleValue(newValue);
+  	  fDetector->SetRPCRadioPos(distance);
+    }
+
+    // set detector angle
+    if (command == ftrdPhiPositionCMD) {
+     	G4double angle = ftrdPhiPositionCMD->GetNewDoubleValue(newValue);
+     	fDetector->SetRPCPhiPos(angle);
+    }
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

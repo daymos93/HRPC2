@@ -1,14 +1,15 @@
 #
-# Macro file for "TestEm7.cc"
+# Macro file for "hrpc.cc"
 # (can be run in batch, without graphic)
 #
 #
 /control/verbose 2
 /run/verbose 2
 #
+#/testem/det/setMat Water
 /testem/det/setMat Tissue
 /testem/det/setSizeX  30 cm
-/testem/det/setSizeYZ 30 cm
+/testem/det/setSizeYZ 80 cm
 #
 /testem/phys/addPhysics  local
 ##/testem/phys/addPhysics  emstandard_opt3
@@ -16,7 +17,7 @@
 /run/initialize
 #
 /gun/particle proton
-/gun/energy 150 MeV
+/gun/energy 200 MeV
 #
 # step limit
 #/run/setCut 0.5 mm
@@ -25,9 +26,9 @@
 #
 /run/printProgress 1000
 #
-/analysis/setFileName hrpc_proton_150
-/analysis/h1/set 2 100 125 175 mm
-/analysis/h1/set 3 100 125 175 mm
+/analysis/setFileName hrpc
+/analysis/h1/set 2 100 70 80 mm
+/analysis/h1/set 3 100 70 80 mm
 #
 /run/beamOn 10000
 #

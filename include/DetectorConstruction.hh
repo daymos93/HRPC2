@@ -14,7 +14,9 @@ class G4UniformMagField;
 class DetectorMessenger;
 
 const G4int kMaxTally = 20;
-const G4int Nstrati = 41;						//costante per definire NUMERO DI STRATI (con int non funziona)
+//const G4int Nstrati = 41;						//costante per definire NUMERO DI STRATI (con int non funziona)
+const G4int Nstrati = 35;						//without honeycomb panel
+
 
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -41,8 +43,23 @@ public:
   inline G4double GetWorldSizeX()  const {return fWorldSizeX;};
   inline G4double GetWorldSizeYZ() const {return fWorldSizeYZ;};
   inline G4double GetAbsorSizeX()  const {return fAbsorSizeX;};
-  inline G4double GetAbsorSizeYZ() const {return fAbsorSizeYZ;};           
+  inline G4double GetAbsorSizeYZ() const {return fAbsorSizeYZ;};
   inline G4int    GetTallyNumber() const {return fTallyNumber;};
+
+  //G4double GetRPCSizeYZ()   const {return fRPCSizeYZ;};
+  void     SetGasGapThickness(const G4double thick) { fgapThickness = thick; }
+  G4double GetGasGapThickness() const               { return fgapThickness;  }
+
+  // Public methods to set/get the detector distance to (0,0,0)
+  void     SetRPCRadioPos(const G4double distance) { ftrdRadioPosition = distance; }
+  G4double GetRPCRadioPos() const               { return ftrdRadioPosition;  }
+
+  // Public methods to set/get the detector angle
+  void     SetRPCPhiPos(const G4double angle) { ftrdPhiPosition = angle; }
+  G4double GetRPCPhiPos() const               { return ftrdPhiPosition;  }
+
+
+  G4double GetAbsorMass() const;
 
   inline const G4Material* GetWorldMaterial() const {return fWorldMaterial;};
   inline const G4Material* GetAbsorMaterial() const {return fAbsorMaterial;};
@@ -63,6 +80,8 @@ private:
   G4Material*         fWorldMaterial;
   G4Material*		  fMatStrati[Nstrati];
 
+  G4double			  fAbsorMass;
+
   G4UniformMagField*  fMagField;
   G4LogicalVolume*    fLAbsor;
   G4LogicalVolume*    fLWorld;
@@ -76,11 +95,14 @@ private:
   DetectorMessenger*  fDetectorMessenger;
 
 
-  G4double minorBase; 		//dimensioni trapezio camera (area effettiva)
-  G4double majorBase;
-  G4double Height;
-  G4double ftrdRPosition;
-  G4double ftrdThetaPosition;
+  //G4double 		  	  minorBase; 		//dimensioni trapezio camera (area effettiva)
+  //G4double 		      majorBase;
+  //G4double 		      Height;
+  G4double            fRPCSizeYZ;
+  G4double 			  ftrdRadioPosition;
+  G4double 			  ftrdPhiPosition;
+
+  G4double			  fgapThickness;
 
   std::vector<G4Trd*>           trdCollection ;			//collezione del nome dei volumi
   std::vector<G4LogicalVolume*> trdLogCollection ;		//collezione dei volumi logici

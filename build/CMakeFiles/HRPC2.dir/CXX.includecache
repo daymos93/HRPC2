@@ -49,6 +49,8 @@ vector
 ../include/HistoManager.hh
 g4root.hh
 ../include/g4root.hh
+G4RunManager.hh
+../include/G4RunManager.hh
 
 ../include/PhysListEmStandard.hh
 G4VPhysicsConstructor.hh
@@ -117,6 +119,10 @@ G4UImessenger.hh
 ../include/SteppingAction.hh
 G4UserSteppingAction.hh
 ../include/G4UserSteppingAction.hh
+globals.hh
+../include/globals.hh
+HistoManager.hh
+../include/HistoManager.hh
 
 ../include/SteppingVerbose.hh
 G4SteppingVerbose.hh
@@ -897,6 +903,14 @@ Exceptions/ZMthrow.h
 /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/Exceptions/ZMthrow.h
 
 /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/defs.h
+
+/home/dayron/Applications/Geant4/geant4-install/include/Geant4/FTFP_BERT_HP.hh
+CLHEP/Units/SystemOfUnits.h
+-
+globals.hh
+/home/dayron/Applications/Geant4/geant4-install/include/Geant4/globals.hh
+G4VModularPhysicsList.hh
+/home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VModularPhysicsList.hh
 
 /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ASCIITree.hh
 G4VTree.hh
@@ -7029,8 +7043,12 @@ PhysicsList.hh
 /home/dayron/Geant4/HRPC2/PhysicsList.hh
 PrimaryGeneratorAction.hh
 /home/dayron/Geant4/HRPC2/PrimaryGeneratorAction.hh
+FTFP_BERT_HP.hh
+/home/dayron/Geant4/HRPC2/FTFP_BERT_HP.hh
 G4PhysListFactory.hh
 /home/dayron/Geant4/HRPC2/G4PhysListFactory.hh
+G4VModularPhysicsList.hh
+/home/dayron/Geant4/HRPC2/G4VModularPhysicsList.hh
 RunAction.hh
 /home/dayron/Geant4/HRPC2/RunAction.hh
 TrackingAction.hh
@@ -7199,6 +7217,10 @@ G4UnitsTable.hh
 /home/dayron/Geant4/HRPC2/src/G4UnitsTable.hh
 G4SystemOfUnits.hh
 /home/dayron/Geant4/HRPC2/src/G4SystemOfUnits.hh
+g4root.hh
+/home/dayron/Geant4/HRPC2/src/g4root.hh
+cmath
+-
 
 /home/dayron/Geant4/HRPC2/src/PhysListEmStandard.cc
 PhysListEmStandard.hh
@@ -7501,6 +7523,18 @@ RunAction.hh
 /home/dayron/Geant4/HRPC2/src/RunAction.hh
 Randomize.hh
 /home/dayron/Geant4/HRPC2/src/Randomize.hh
+RunAction.hh
+/home/dayron/Geant4/HRPC2/src/RunAction.hh
+HistoManager.hh
+/home/dayron/Geant4/HRPC2/src/HistoManager.hh
+G4UnitsTable.hh
+/home/dayron/Geant4/HRPC2/src/G4UnitsTable.hh
+G4Track.hh
+/home/dayron/Geant4/HRPC2/src/G4Track.hh
+G4RunManager.hh
+/home/dayron/Geant4/HRPC2/src/G4RunManager.hh
+HistoManager.hh
+/home/dayron/Geant4/HRPC2/src/HistoManager.hh
 
 /home/dayron/Geant4/HRPC2/src/SteppingVerbose.cc
 SteppingVerbose.hh

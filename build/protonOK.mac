@@ -1,0 +1,43 @@
+#
+# Macro file for "hrpc.cc"
+# (can be run in batch, without graphic)
+#
+#
+/control/verbose 2
+/run/verbose 2
+#
+#/hrpc/det/setMat Water
+/hrpc/det/setMat Tissue
+/hrpc/det/setSizeX  30 cm
+/hrpc/det/setSizeYZ 80 cm
+
+#/hrpc/det/setGapThickness 10. mm
+/hrpc/det/setRPCRadioPos 80. cm
+/hrpc/det/setRPCPhiPos 0. deg
+
+#set physics list
+#/testem/phys/addPhysics  local
+#/testem/phys/addPhysics  emstandard_opt3
+#
+
+/run/initialize
+/run/dumpRegion 1
+#
+/gun/particle proton
+/gun/energy 200 MeV
+#
+# step limit
+#/run/setCut 0.5 mm
+/run/setCut 1 mm
+#/testem/stepMax 0.5 mm
+#
+#/run/printProgress 10000
+/run/printProgress 1000
+#
+/analysis/setFileName hrpc
+/analysis/h1/set 2 100 220 280 mm
+/analysis/h1/set 3 100 220 280 mm
+#
+#/run/beamOn 1000000
+/run/beamOn 50000
+#

@@ -15,10 +15,10 @@
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-RunAction::RunAction(DetectorConstruction* det, PhysicsList* phys,
+RunAction::RunAction(DetectorConstruction* det,/* PhysicsList* phys,*/
                      PrimaryGeneratorAction* kin)
  : G4UserRunAction(),
-   /*fAnalysisManager(0),*/ fDetector(det), fPhysics(phys), fKinematic(kin),
+   /*fAnalysisManager(0),*/ fDetector(det),/* fPhysics(phys), */fKinematic(kin),
    fTallyEdep(new G4double[kMaxTally]), fProjRange(0.), fProjRange2(0.),
    fEdeptot(0.), fEniel(0.), fNbPrimarySteps(0), fRange(0)
 { 
@@ -60,7 +60,8 @@ void RunAction::BeginOfRunAction(const G4Run* aRun)
     // histogram "1" is defined by the length of the target
     // zoomed histograms are defined by UI command  
     G4double length  = fDetector->GetAbsorSizeX();
-    G4double stepMax = fPhysics->GetStepMaxProcess()->GetMaxStep();
+    //G4double stepMax = fPhysics->GetStepMaxProcess()->GetMaxStep();
+    G4double stepMax = 1.*CLHEP::mm;
     G4int nbmin = 100;
     G4int nbBins = (G4int)(0.5 + length/stepMax);
     if (nbBins < nbmin) nbBins = nbmin;
@@ -83,12 +84,14 @@ void RunAction::EndOfRunAction(const G4Run* aRun)
   G4String particle = fKinematic->GetParticleGun()->GetParticleDefinition()
                       ->GetParticleName();    
   G4double energy = fKinematic->GetParticleGun()->GetParticleEnergy();
-  G4cout << "\n The run consists of " << nbofEvents << " "<< particle << " of "
-         << G4BestUnit(energy,"Energy") << " through " 
-         << G4BestUnit(fDetector->GetAbsorSizeX(),"Length") << " of "
-         << material->GetName() << " ( density: "
-         << G4BestUnit(density,"Volumic Mass") << ")" << G4endl;
-         
+
+  G4cout << "\n ======================== Run summary ======================\n";
+  G4cout << "\n The run was " << nbofEvents << " "<< particle << " of " << G4BestUnit(energy,"Energy")
+         << "\n through " << G4BestUnit(fDetector->GetAbsorSizeX(),"Length") << " of " << material->GetName() << " ( density: " << G4BestUnit(density,"Volumic Mass") << ")"
+  	  	 <<	"\n The RPC position in X-Z plane was " <<  G4BestUnit(fDetector->GetRPCRadioPos(),"Length") << "@ " << G4BestUnit(fDetector->GetRPCPhiPos(),"Angle")
+  	  	 << "\n with gap thickness of " << G4BestUnit(fDetector->GetGasGapThickness(), "Length") << G4endl;
+  //G4cout << "\n-----------------------------------------------\n";
+
   //compute projected range and straggling
   //
   if(fRange > 0) {
@@ -106,10 +109,16 @@ void RunAction::EndOfRunAction(const G4Run* aRun)
          << G4endl;
   G4cout << " Mean number of primary steps = "<< nstep << G4endl;
 
-  //compute energy deposition and niel
+  //compute energy deposition, total dose and niel
   //
-  fEdeptot /= nbofEvents; 
+  fEdeptot /= nbofEvents;
+
+  G4double fAbsorMass = fDetector->GetAbsorMass();
+  G4double totalDose = fEdeptot/fAbsorMass;
+
   G4cout << " Total energy deposit= "<< G4BestUnit(fEdeptot,"Energy")
+         << G4endl;
+  G4cout << " Total dose deposit= "<< G4BestUnit(totalDose,"Dose")
          << G4endl;
   fEniel /= nbofEvents; 
   G4cout << " niel energy deposit = "<< G4BestUnit(fEniel,"Energy")
@@ -137,7 +146,13 @@ void RunAction::EndOfRunAction(const G4Run* aRun)
 
   if (histo->fAnalysisManager->IsActive() ) {
     // normalize histograms
+	  G4double fAbsorMass = fDetector->GetAbsorMass();
+	  G4double totalDose = fEdeptot/fAbsorMass;
+
+	  //histo->FillLastHisto();
+
     //
+	  //histo->Normalize(nbofEvents, totalDose);
 	  histo->Normalize(nbofEvents);
     /*for (G4int j=1; j<3; ++j) {
       G4double binWidth = histo->fAnalysisManager->GetH1Width(j);

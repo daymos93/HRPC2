@@ -11,6 +11,11 @@
 /control/saveHistory
 /run/verbose 2
 #
+/hrpc/det/setGapThickness 1. mm
+/hrpc/det/setRPCRadioPos 150. cm
+/hrpc/det/setRPCPhiPos 0. deg
+
+
 /run/initialize
 /run/dumpRegion 1
 

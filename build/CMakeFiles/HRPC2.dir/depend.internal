@@ -99,6 +99,7 @@ CMakeFiles/HRPC2.dir/HRPC2.cc.o
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/ThreeVector.icc
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/ZMxpv.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/defs.h
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/FTFP_BERT_HP.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ASCIITree.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AffineTransform.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AffineTransform.icc
@@ -1277,31 +1278,205 @@ CMakeFiles/HRPC2.dir/src/G4ScreenedNuclearRecoil.cc.o
  /home/dayron/Geant4/HRPC2/src/G4ScreenedNuclearRecoil.cc
 CMakeFiles/HRPC2.dir/src/HistoManager.cc.o
  ../include/HistoManager.hh
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Geometry/BasicVector3D.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Geometry/Normal3D.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Geometry/Point3D.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Geometry/Transform3D.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Geometry/Transform3D.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Geometry/Vector3D.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Geometry/defs.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/DRand48Engine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/DualRand.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Hurd160Engine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Hurd288Engine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/JamesRandom.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/MTwistEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/MixMaxRng.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBinomial.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBinomial.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBit.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBit.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBreitWigner.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBreitWigner.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandChiSquare.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandChiSquare.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandExpZiggurat.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandExponential.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandExponential.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandFlat.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandFlat.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGamma.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGamma.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGauss.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGauss.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGaussQ.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGaussQ.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGaussT.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGaussT.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGaussZiggurat.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGeneral.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGeneral.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandLandau.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandLandau.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoisson.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoisson.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoissonQ.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoissonQ.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoissonT.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoissonT.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandSkewNormal.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandSkewNormal.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandStudentT.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandStudentT.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Random.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Random.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandomEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandomEngine.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Randomize.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RanecuEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Ranlux64Engine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RanluxEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RanshiEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Stat.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/TripleRand.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/defs.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Units/PhysicalConstants.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Units/SystemOfUnits.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Units/defs.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Utility/defs.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Utility/memory.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Utility/noncopyable.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Utility/thread_local.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/AxisAngle.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/AxisAngle.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/LorentzVector.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/LorentzVector.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/Rotation.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/Rotation.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/RotationInterfaces.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/RotationInterfaces.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/RotationX.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/RotationX.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/RotationY.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/RotationY.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/RotationZ.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/RotationZ.icc
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/ThreeVector.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/ThreeVector.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/ZMxpv.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/defs.h
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AffineTransform.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AffineTransform.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Allocator.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AllocatorPool.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AnalysisManagerState.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AnalysisUtilities.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AnalysisVerbose.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ApplicationState.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AutoLock.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AuxiliaryNavServices.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AuxiliaryNavServices.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseAnalysisManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseFileManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseRNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BinScheme.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ClassificationOfNewTrack.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DCofThisEvent.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DataVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DataVector.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DynamicParticle.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DynamicParticle.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ElectronOccupancy.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Element.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ElementTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ElementVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4EnvironmentUtils.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Event.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4EventManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Exception.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ExceptionSeverity.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Exp.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4FastVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Fcn.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ForceCondition.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GPILSelection.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSSolid.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSSolid.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSVolume.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSVolume.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GeomSplitter.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GlobalConfig.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4H1ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4H2ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4H3ToolsManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4HCofThisEvent.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4HnInformation.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4HnManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4IonisParamElm.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4IonisParamMat.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Isotope.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4IsotopeVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Log.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4LogicalVolume.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4LogicalVolume.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4LorentzVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Material.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialPropertiesIndex.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialPropertiesTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialPropertiesTable.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialPropertyVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationHistory.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationHistory.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationHistoryPool.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevel.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevel.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevelRep.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevelRep.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLogger.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Navigator.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Navigator.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NormalNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NormalNavigation.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4OrderedTable.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4P1ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4P2ToolsManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PDefManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParameterisedNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParameterisedNavigation.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleChange.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleChange.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleDefinition.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleDefinition.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleMomentum.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleTable.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleTableIterator.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsModelCatalog.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsOrderedFreeVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsTable.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsVector.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsVectorType.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PrimaryParticle.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PrimaryTransformer.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PrimaryVertex.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessManager.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessType.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessVector.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ReferenceCountedHandle.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Region.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Region.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RegularNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ReplicaNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ReplicaNavigation.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootAnalysisManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootAnalysisManager.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootAnalysisReader.hh
@@ -1309,6 +1484,26 @@ CMakeFiles/HRPC2.dir/src/HistoManager.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootFileManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootRNtupleManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RotationMatrix.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RunManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RunManagerKernel.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SandiaTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartTrackStack.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelHeader.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelHeader.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelNode.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelNode.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelProxy.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelProxy.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StackManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StackedTrack.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Step.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Step.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StepPoint.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StepPoint.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StepStatus.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SteppingControl.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SteppingManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4String.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4String.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SystemOfUnits.hh
@@ -1326,27 +1521,75 @@ CMakeFiles/HRPC2.dir/src/HistoManager.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ToolsAnalysisManager.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ToolsAnalysisReader.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ToolsAnalysisReader.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHandle.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHistory.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHistory.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHistoryHandle.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Track.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Track.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackFastVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackStack.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackStatus.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackingManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackingMessenger.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrajectoryContainer.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Transform3D.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Types.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcommand.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIdirectory.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UImessenger.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIparameter.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UItokenNum.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UnitsTable.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UnitsTable.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserStackingAction.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserSteppingAction.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserTrackingAction.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisManager.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisReader.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisReader.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VDigiCollection.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VExceptionHandler.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VExternalNavigation.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VFileManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VH1Manager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VH2Manager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VH3Manager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VHitsCollection.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VP1Manager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VP2Manager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VPVParameterisation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VParticleChange.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VParticleChange.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VPhysicalVolume.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VPhysicalVolume.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VProcess.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VRNtupleManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VSolid.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VSolid.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VSteppingVerbose.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VTouchable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VTouchable.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VTrajectory.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VUserEventInformation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VUserTrackInformation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VVolumeMaterialScanner.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VoxelNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VoxelNavigation.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ios.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/Randomize.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/evmandefs.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/evtdefs.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/g4hntools_defs.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/g4root.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/g4root_defs.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/geomdefs.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/geomwdefs.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/globals.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/pwdefs.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/templates.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tls.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tools/S_STRING
@@ -1448,6 +1691,8 @@ CMakeFiles/HRPC2.dir/src/HistoManager.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tools/wroot/to
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tools/wroot/tree
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tools/wroot/wbuf
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/trajectoryControl.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/trkdefs.hh
  /home/dayron/Geant4/HRPC2/src/HistoManager.cc
 CMakeFiles/HRPC2.dir/src/PhysListEmStandard.cc.o
  ../include/PhysListEmStandard.hh
@@ -3676,14 +3921,21 @@ CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AnalysisManagerState.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AnalysisUtilities.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AnalysisVerbose.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ApplicationState.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AutoLock.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AuxiliaryNavServices.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AuxiliaryNavServices.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseAnalysisManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseFileManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseRNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BinScheme.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BoundingEnvelope.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4CSGSolid.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ClassificationOfNewTrack.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DCofThisEvent.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DataVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DataVector.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DynamicParticle.hh
@@ -3693,10 +3945,19 @@ CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ElementTable.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ElementVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4EnvironmentUtils.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Event.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4EventManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Exception.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ExceptionSeverity.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Exp.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4FastVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Fcn.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ForceCondition.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GPILSelection.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSSolid.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSSolid.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSVolume.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSVolume.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GeomConfig.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GeomSplitter.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GeomTypes.hh
@@ -3704,6 +3965,7 @@ CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4H1ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4H2ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4H3ToolsManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4HCofThisEvent.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4HnInformation.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4HnManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4IonisParamElm.hh
@@ -3720,25 +3982,57 @@ CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialPropertiesTable.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialPropertyVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationHistory.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationHistory.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationHistoryPool.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevel.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevel.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevelRep.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevelRep.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLogger.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Navigator.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Navigator.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Normal3D.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NormalNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NormalNavigation.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4OrderedTable.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4P1ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4P2ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PDefManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParameterisedNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParameterisedNavigation.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleChange.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleChange.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleDefinition.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleDefinition.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleMomentum.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleTable.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleTableIterator.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsModelCatalog.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsOrderedFreeVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsTable.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsVector.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsVectorType.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Plane3D.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Point3D.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Polyhedron.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PrimaryParticle.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PrimaryTransformer.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PrimaryVertex.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessManager.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessType.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessVector.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ReferenceCountedHandle.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Region.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Region.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RegularNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ReplicaNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ReplicaNavigation.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootAnalysisManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootAnalysisManager.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootAnalysisReader.hh
@@ -3747,13 +4041,25 @@ CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootRNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RotationMatrix.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RunManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RunManagerKernel.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SandiaTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartTrackStack.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelHeader.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelHeader.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelNode.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelNode.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelProxy.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelProxy.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StackManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StackedTrack.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Step.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Step.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StepPoint.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StepPoint.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StepStatus.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SteppingControl.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SteppingManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4String.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4String.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4THnManager.hh
@@ -3771,48 +4077,80 @@ CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ToolsAnalysisReader.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ToolsAnalysisReader.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHandle.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHistory.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHistory.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHistoryHandle.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Track.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Track.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackFastVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackStack.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackStatus.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackingManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackingMessenger.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrajectoryContainer.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Transform3D.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Trd.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Trd.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Types.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UAdapter.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcommand.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIdirectory.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UImessenger.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIparameter.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UItokenNum.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UTrd.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UnitsTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UnitsTable.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserRunAction.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserStackingAction.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserSteppingAction.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserTrackingAction.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisManager.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisReader.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisReader.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VDigiCollection.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VExceptionHandler.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VExternalNavigation.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VFileManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VGraphicsScene.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VH1Manager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VH2Manager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VH3Manager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VHitsCollection.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VP1Manager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VP2Manager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VPVParameterisation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VParticleChange.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VParticleChange.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VPhysicalVolume.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VPhysicalVolume.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VProcess.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VRNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VSolid.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VSolid.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VSteppingVerbose.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VTouchable.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VTouchable.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VTrajectory.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VUserDetectorConstruction.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VUserEventInformation.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VUserTrackInformation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VVolumeMaterialScanner.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VisExtent.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Visible.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Visible.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VoxelLimits.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VoxelLimits.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VoxelNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VoxelNavigation.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ios.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/HepPolyhedron.h
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/Randomize.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/evmandefs.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/evtdefs.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/g4hntools_defs.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/g4root.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/g4root_defs.hh
@@ -3921,6 +4259,7 @@ CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tools/wroot/to
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tools/wroot/tree
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tools/wroot/wbuf
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/trajectoryControl.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/trkdefs.hh
  /home/dayron/Geant4/HRPC2/src/SteppingAction.cc
 CMakeFiles/HRPC2.dir/src/SteppingVerbose.cc.o
@@ -4270,9 +4609,69 @@ CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Geometry/Transform3D.icc
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Geometry/Vector3D.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Geometry/defs.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/DRand48Engine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/DualRand.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Hurd160Engine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Hurd288Engine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/JamesRandom.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/MTwistEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/MixMaxRng.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBinomial.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBinomial.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBit.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBit.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBreitWigner.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandBreitWigner.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandChiSquare.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandChiSquare.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandExpZiggurat.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandExponential.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandExponential.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandFlat.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandFlat.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGamma.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGamma.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGauss.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGauss.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGaussQ.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGaussQ.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGaussT.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGaussT.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGaussZiggurat.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGeneral.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandGeneral.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandLandau.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandLandau.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoisson.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoisson.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoissonQ.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoissonQ.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoissonT.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandPoissonT.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandSkewNormal.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandSkewNormal.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandStudentT.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandStudentT.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Random.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Random.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandomEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RandomEngine.icc
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Randomize.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RanecuEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Ranlux64Engine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RanluxEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/RanshiEngine.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/Stat.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/TripleRand.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Random/defs.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Units/PhysicalConstants.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Units/SystemOfUnits.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Units/defs.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Utility/defs.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Utility/memory.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Utility/noncopyable.h
+ /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Utility/thread_local.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/AxisAngle.h
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/AxisAngle.icc
  /home/dayron/Applications/CLHEP/CLHEP-install/lib/CLHEP-2.4.1.3/../../include/CLHEP/Vector/LorentzVector.h
@@ -4298,14 +4697,21 @@ CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AnalysisManagerState.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AnalysisUtilities.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AnalysisVerbose.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ApplicationState.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AutoLock.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AuxiliaryNavServices.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AuxiliaryNavServices.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseAnalysisManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseFileManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BaseRNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BinScheme.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BoundingEnvelope.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4CSGSolid.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ClassificationOfNewTrack.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DCofThisEvent.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DataVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DataVector.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DynamicParticle.hh
@@ -4315,10 +4721,19 @@ CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ElementTable.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ElementVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4EnvironmentUtils.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Event.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4EventManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Exception.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ExceptionSeverity.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Exp.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4FastVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Fcn.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ForceCondition.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GPILSelection.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSSolid.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSSolid.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSVolume.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GRSVolume.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GeomConfig.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GeomSplitter.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4GeomTypes.hh
@@ -4326,6 +4741,7 @@ CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4H1ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4H2ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4H3ToolsManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4HCofThisEvent.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4HnInformation.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4HnManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4IonisParamElm.hh
@@ -4342,25 +4758,57 @@ CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialPropertiesTable.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialPropertyVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4MaterialTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationHistory.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationHistory.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationHistoryPool.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevel.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevel.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevelRep.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLevelRep.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NavigationLogger.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Navigator.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Navigator.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Normal3D.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NormalNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4NormalNavigation.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4OrderedTable.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4P1ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4P2ToolsManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PDefManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParameterisedNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParameterisedNavigation.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleChange.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleChange.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleDefinition.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleDefinition.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleMomentum.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleTable.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ParticleTableIterator.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsModelCatalog.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsOrderedFreeVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsTable.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsVector.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsVector.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PhysicsVectorType.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Plane3D.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Point3D.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Polyhedron.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PrimaryParticle.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PrimaryTransformer.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4PrimaryVertex.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessManager.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessType.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ProcessVector.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ReferenceCountedHandle.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Region.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Region.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RegularNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ReplicaNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ReplicaNavigation.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootAnalysisManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootAnalysisManager.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootAnalysisReader.hh
@@ -4369,13 +4817,25 @@ CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RootRNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RotationMatrix.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RunManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4RunManagerKernel.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SandiaTable.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartTrackStack.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelHeader.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelHeader.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelNode.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelNode.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelProxy.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SmartVoxelProxy.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StackManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StackedTrack.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Step.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Step.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StepPoint.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StepPoint.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4StepStatus.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SteppingControl.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4SteppingManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4String.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4String.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4THnManager.hh
@@ -4393,47 +4853,78 @@ CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ToolsAnalysisReader.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ToolsAnalysisReader.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHandle.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHistory.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHistory.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TouchableHistoryHandle.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Track.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Track.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackFastVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackStack.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackStatus.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackVector.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackingManager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrackingMessenger.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4TrajectoryContainer.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Transform3D.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Trd.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Trd.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Types.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UAdapter.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcommand.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIdirectory.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UImessenger.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIparameter.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UItokenNum.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UTrd.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserRunAction.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserStackingAction.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserSteppingAction.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UserTrackingAction.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisManager.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisReader.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VAnalysisReader.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VDigiCollection.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VExceptionHandler.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VExternalNavigation.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VFileManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VGraphicsScene.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VH1Manager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VH2Manager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VH3Manager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VHitsCollection.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VP1Manager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VP2Manager.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VPVParameterisation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VParticleChange.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VParticleChange.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VPhysicalVolume.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VPhysicalVolume.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VProcess.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VRNtupleManager.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VSolid.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VSolid.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VSteppingVerbose.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VTouchable.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VTouchable.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VTrajectory.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VUserDetectorConstruction.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VUserEventInformation.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VUserTrackInformation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VVolumeMaterialScanner.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VisExtent.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Visible.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Visible.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VoxelLimits.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VoxelLimits.icc
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VoxelNavigation.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4VoxelNavigation.icc
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ios.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/HepPolyhedron.h
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/Randomize.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/evmandefs.hh
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/evtdefs.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/g4hntools_defs.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/g4root.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/g4root_defs.hh
@@ -4542,5 +5033,6 @@ CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tools/wroot/to
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tools/wroot/tree
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/tools/wroot/wbuf
+ /home/dayron/Applications/Geant4/geant4-install/include/Geant4/trajectoryControl.hh
  /home/dayron/Applications/Geant4/geant4-install/include/Geant4/trkdefs.hh
  /home/dayron/Geant4/HRPC2/src/TrackingAction.cc
