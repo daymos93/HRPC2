@@ -6,6 +6,7 @@
 #include "globals.hh"
 #include "G4ThreeVector.hh"
 #include "G4Trd.hh"
+#include "G4Box.hh"
 #include "G4RotationMatrix.hh"
 
 class G4LogicalVolume;
@@ -14,8 +15,8 @@ class G4UniformMagField;
 class DetectorMessenger;
 
 const G4int kMaxTally = 20;
-//const G4int Nstrati = 41;						//costante per definire NUMERO DI STRATI (con int non funziona)
-const G4int Nstrati = 35;						//without honeycomb panel
+const G4int Nstrati = 41;						//costante per definire NUMERO DI STRATI (con int non funziona)
+//const G4int Nstrati = 35;						//without honeycomb panel
 
 
 
@@ -104,8 +105,9 @@ private:
 
   G4double			  fgapThickness;
 
-  std::vector<G4Trd*>           trdCollection ;			//collezione del nome dei volumi
-  std::vector<G4LogicalVolume*> trdLogCollection ;		//collezione dei volumi logici
+  //std::vector<G4Trd*>           trdCollection ;			//collezione del nome dei volumi
+  std::vector<G4Box*>           boxCollection ;			//collezione del nome dei volumi
+  std::vector<G4LogicalVolume*> boxLogCollection ;		//collezione dei volumi logici
 
   //per controllare che nessun volume sia sovrapposto ad un altro
   G4bool  fCheckOverlaps;

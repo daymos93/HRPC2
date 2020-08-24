@@ -38,15 +38,16 @@ class SteppingAction : public G4UserSteppingAction
     HistoManager*		  histo;
     G4double edep;
 
-    G4int p_incident, p_incident_top, p_incident_bot, p_charge, p_charge_gap1, p_charge_gap2;			// variabile 0/1  particelle incidenti sia bot che top
+    G4int p_incident, p_incident_top, p_incident_bot, p_charge, p_charge_gap1, p_charge_gap2, p_gap, p_gap_top, p_gap_bot;			// variabile 0/1  particelle incidenti sia bot che top
 
     //energia SOLO dei fotoni incidenti che poi producono segnale
-    G4double Ek_in_signal;
-    G4int in_signal_status;
+    //G4double Ek_in_signal;
+    //G4int in_signal_status;
 
-    HistoManager::particleData particle_incident_TOT, particle_incident_TOP, particle_incident_BOT;
-	HistoManager::particleChargeData particle_charge_TOT, particle_charge_Gap1, particle_charge_Gap2;
-	HistoManager::particleKODELData particleKODELStep;
+    HistoManager::particleData 	particle_incident_TOT, particle_incident_TOP, particle_incident_BOT;
+    HistoManager::particleData 	particle_gap_TOT, particle_gap_TOP, particle_gap_BOT;
+	//HistoManager::particleChargeData particle_charge_TOT, particle_charge_Gap1, particle_charge_Gap2;
+	//HistoManager::particleKODELData particleKODELStep;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

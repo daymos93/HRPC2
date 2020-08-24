@@ -6,12 +6,12 @@
 /control/verbose 2
 /run/verbose 2
 #
-#/testem/det/setMat Water
-/testem/det/setMat Tissue
-/testem/det/setSizeX  30 cm
-/testem/det/setSizeYZ 80 cm
+#/hrpc/det/setMat Water
+/hrpc/det/setMat Tissue
+/hrpc/det/setSizeX  30 cm
+/hrpc/det/setSizeYZ 80 cm
 #
-/testem/phys/addPhysics  local
+#/testem/phys/addPhysics  local
 ##/testem/phys/addPhysics  emstandard_opt3
 #
 /run/initialize

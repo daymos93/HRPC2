@@ -27,14 +27,14 @@ void TrackingAction::PostUserTrackingAction(const G4Track* track)
   }  
 
   ////// //////		Secondary particle produced		////// ///////
-  G4String volName = track->GetTouchable()->GetVolume()->GetName();
+  /*G4String volName = track->GetTouchable()->GetVolume()->GetName();
   G4int parentID = track->GetParentID();
   G4double totalEdep = track->GetTotalEnergy();
   if ( (volName == "World") && (parentID != 0) && (totalEdep > 0) ) {
   	G4String particleName = track->GetParticleDefinition()->GetParticleName();
  	if (particleName == "neutron") { G4AnalysisManager::Instance()->FillH1(4,totalEdep);}
  	if (particleName == "gamma") { G4AnalysisManager::Instance()->FillH1(5,totalEdep);}
-  }
+  }*/
 
 
 }

@@ -40,19 +40,20 @@ DetectorConstruction::DetectorConstruction()
 	fRPCSizeYZ(0),
 	fgapThickness(0),
 	ftrdRadioPosition(0),
-	ftrdPhiPosition(0)
+	ftrdPhiPosition(0),
+	fCheckOverlaps(true)
 	{
   // default parameter values
   fAbsorSizeX = 30*cm;
-  fAbsorSizeYZ = 80*cm;
-  fWorldSizeX = fWorldSizeYZ = 8*m;
+  fAbsorSizeYZ = 60*cm;
+  fWorldSizeX = fWorldSizeYZ = 4*m;
   //majorBase	=	584.1*mm;				//definizione valori dimensioni trapezio camera
   //minorBase	=	866.3*mm;
   //Height	= 	1613.0*mm;
   fRPCSizeYZ 	=  800*mm;
-  fgapThickness = 1.4*mm;
+  fgapThickness = 1.*mm;
   ftrdRadioPosition	=	1000.0*mm;			//distancia detector to origin
-  ftrdPhiPosition	=	0.0*deg;
+  ftrdPhiPosition	=	60.0*deg;
 
   fAbsorMass = 0.;
 
@@ -200,8 +201,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 	G4Material* MatStrati[Nstrati] =				//array materiali
 	{
 
-			Air,								//falso layer di aria
-			//Al, AlCore, Al,								//honeycomb panel BOTTOM
+			/*Air,								//falso layer di aria
+			Al, AlCore, Al,								//honeycomb panel BOTTOM
 			HPL,								//bakelite layer
 			PET,								//pet insulation BOT
 
@@ -217,11 +218,11 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
 			paper,								//layer paper
 			PET,								//pet insulation TOP
-			//Al, AlCore ,Al,								//honeycomb panel  TOP
-			Air,  								//falso layer di aria
+			Al, AlCore ,Al,								//honeycomb panel  TOP
+			Air,  	*/							//falso layer di aria
 
 			//define as Andrea
-	  	/*	Air,  								//falso layer di aria
+	  		Air,  								//falso layer di aria
 	  		Al, AlCore ,Al,								//honeycomb panel  TOP
 	  		PET,								//pet insulation TOP
 	  		paper,								//layer paper
@@ -239,7 +240,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 	  		PET,								//pet insulation BOT
 	  		HPL,								//bakelite layer
 	  		Al, AlCore, Al,								//honeycomb panel BOTTOM
-	  		Air,	*/							//falso layer di aria
+	  		Air,								//falso layer di aria
 
 	};
 
@@ -316,8 +317,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   //TRAPEZI CAMERA (UNO DI SEGUITO ALL'ALTRO),   RE4-2 KODEL DG 1.4 1.4
   std::string NomeStrati[Nstrati]= 					//array nome strati
   {
-		  "fakeBottom",								//falso layer di aria
-		  //"Honeycomb_skin2_1", "Honeycomb_core2","Honeycomb_skin2_2",		//honeycomb panel BOTTOM
+		  /*"fakeBottom",								//falso layer di aria
+		  "Honeycomb_skin2_1", "Honeycomb_core2","Honeycomb_skin2_2",		//honeycomb panel BOTTOM
 		  "Bakelite",								//bakelite layer
 		  "PET_insulationBOT",							//pet insulation BOT
 
@@ -333,11 +334,11 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
 		  "paper",								//layer paper
 		  "PET_insulationTOP",							//pet insulation TOP
-		  //"Honeycomb_skin1_1", "Honeycomb_core1","Honeycomb_skin1_2",		//honeycomb panel  TOP
-		  "fakeTop",  								//falso layer di aria
+		  "Honeycomb_skin1_1", "Honeycomb_core1","Honeycomb_skin1_2",		//honeycomb panel  TOP
+		  "fakeTop",  	*/									//falso layer di aria
 
 		  //define as Andrea
-  		/*"fakeTop",  								//falso layer di aria
+  		"fakeTop",  								//falso layer di aria
   		"Honeycomb_skin1_1", "Honeycomb_core1","Honeycomb_skin1_2",		//honeycomb panel  TOP
   		"PET_insulationTOP",							//pet insulation TOP
   		"paper",								//layer paper
@@ -355,7 +356,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   		"PET_insulationBOT",							//pet insulation BOT
   		"Bakelite",								//bakelite layer
   		"Honeycomb_skin2_1", "Honeycomb_core2","Honeycomb_skin2_2",		//honeycomb panel BOTTOM
-  		"fakeBottom",	*/							//falso layer di aria
+  		"fakeBottom",						//falso layer di aria
 
   };
 
@@ -368,8 +369,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4double spessoreStrati[Nstrati]=				//array spessori
   {
 
-		 5.0*mm,//0.01*mm,							//falso layer di aria
-		  //0.5*mm, 5.0*mm, 0.5*mm,						//"Honeycomb_skin2_1", "Honeycomb_core2","Honeycomb_skin2_2"
+		 /* 5.0*mm,//0.01*mm,							//falso layer di aria
+		  0.5*mm, 5.0*mm, 0.5*mm,						//"Honeycomb_skin2_1", "Honeycomb_core2","Honeycomb_skin2_2"
 		  2.0*mm,								//bakelite layer
 		  0.188*mm,							//pet insulation BOT
 
@@ -385,12 +386,12 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
 		  1.0*mm,								//layer paper
 		  0.188*mm,							//pet insulation TOP
-		  //0.5*mm,	5.0*mm, 0.5*mm,						//"Honeycomb_skin1_1", "Honeycomb_core1","Honeycomb_skin1_2"
-		  5.0*mm//0.01*mm,								//falso layer di aria
+		  0.5*mm,	5.0*mm, 0.5*mm,						//"Honeycomb_skin1_1", "Honeycomb_core1","Honeycomb_skin1_2"
+		  5.0*mm//0.01*mm,		*/						//falso layer di aria
 
 		  //define as Andrea
-  		/* 5.0*mm,//0.01*mm,								//falso layer di aria
-  		0.5*mm,	5.0*mm, 0.5*mm,						//"Honeycomb_skin1_1", "Honeycomb_core1","Honeycomb_skin1_2"
+  		0.01*mm,//0.01*mm,								//falso layer di aria
+		0.5*mm,	2.0*mm, 0.5*mm, //0.5*mm,	5.0*mm, 0.5*mm,						//"Honeycomb_skin1_1", "Honeycomb_core1","Honeycomb_skin1_2"
   		0.188*mm,							//pet insulation TOP
   		1.0*mm,								//layer paper
 
@@ -406,8 +407,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
   		0.188*mm,							//pet insulation BOT
   		2.0*mm,								//bakelite layer
-  		0.5*mm,	5.0*mm, 0.5*mm,						//"Honeycomb_skin2_1", "Honeycomb_core2","Honeycomb_skin2_2"
-		5.0*mm//0.01*mm,	*/						//falso layer di aria
+  		0.5*mm,	2.0*mm, 0.5*mm,						//"Honeycomb_skin2_1", "Honeycomb_core2","Honeycomb_skin2_2"
+		0.01*mm//0.01*mm,							//falso layer di aria
 
   };
 
@@ -443,8 +444,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   std::string Fakestring="fake";
 
   for(G4int lyr=0;lyr<Nstrati;lyr++){				//loop per assegnare a ogni nome strato il proprio volume logico e forma e spessore
-	  	  G4Trd* strato= new G4Trd(NomeStrati[lyr],spessoreStrati[lyr]/2, spessoreStrati[lyr]/2,fRPCSizeYZ/2, fRPCSizeYZ/2, fRPCSizeYZ/2); //per invertire posizione base maggiore e minore basta invertirli nell'inserimento
-	  	  G4LogicalVolume* logicStrato = new G4LogicalVolume(strato, MatStrati[lyr], NomeStratiLog[lyr]) ;
+	  	  //G4Trd* strato= new G4Trd(NomeStrati[lyr],spessoreStrati[lyr]/2, spessoreStrati[lyr]/2,fRPCSizeYZ/2, fRPCSizeYZ/2, fRPCSizeYZ/2); //per invertire posizione base maggiore e minore basta invertirli nell'inserimento
+	  G4Box* strato= new G4Box(NomeStrati[lyr],spessoreStrati[lyr]/2, fRPCSizeYZ/2,fRPCSizeYZ/2); //per invertire posizione base maggiore e minore basta invertirli nell'inserimento
+	  G4LogicalVolume* logicStrato = new G4LogicalVolume(strato, MatStrati[lyr], NomeStratiLog[lyr]) ;
 
 	  	  if (NomeStrati[lyr].find(HPLstring)==0 or NomeStrati[lyr].find(Bakelitestring)==0) {  		//ciclo per settare colore volumi
 			logicStrato->SetVisAttributes(new G4VisAttributes(*electrodeAttributes));}
@@ -477,22 +479,24 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 	  	  else if (NomeStrati[lyr].find(Fakestring)==0) {
 			logicStrato->SetVisAttributes(new G4VisAttributes(*fakeAttributes));}
 
+		//trdCollection.push_back(strato) ;				//mette forma volume nel vettore
+		//trdLogCollection.push_back(logicStrato) ;		//mette ogni volume logico nel vettore
+	  	boxCollection.push_back(strato) ;				//mette forma volume nel vettore
+	  	boxLogCollection.push_back(logicStrato) ;		//mette ogni volume logico nel vettore
+
+  }
 
 
-
-		trdCollection.push_back(strato) ;				//mette forma volume nel vettore
-		trdLogCollection.push_back(logicStrato) ;		     	//mette ogni volume logico nel vettore
-	}
   //VOLUMI FISICI
   // Rotation Matrix for layers   (ruota elementi disegnati)
   G4RotationMatrix* rotationPlacement = new G4RotationMatrix();
-  //rotationPlacement->rotateX(ftrdPhiPosition+90*deg) ;		//rotazione asse x, per avere asse trapezio verticale
-  //rotationPlacement->rotateY(90*deg) ;		//ruota asse y, per avere x larghezza e z spessore
+  //rotationPlacement->rotateX(ftrdPhiPosition+90*deg) ;	//rotazione asse x, per avere asse trapezio verticale
+  //rotationPlacement->rotateY(90*deg) ;					//ruota asse y, per avere x larghezza e z spessore
   //rotationPlacement->rotateZ(90*deg) ;
 
-  //rotationPlacement->rotateX(0*deg) ;		//rotazione asse x, per avere asse trapezio verticale
-  //rotationPlacement->rotateZ(0*deg) ;		//ruota asse y, per avere x larghezza e z spessore
-  //rotationPlacement->rotateY(-ftrdPhiPosition) ; //-ftrdPhiPosition
+  rotationPlacement->rotateX(0) ;		//rotazione asse x, per avere asse trapezio verticale
+  rotationPlacement-> rotateY(-ftrdPhiPosition) ;//rotateY(0) ;     //
+  rotationPlacement->rotateZ(0) ;		//ruota asse y, per avere x larghezza e z spessore
 
   //-- variabile per shift rispetto a world
 
@@ -501,31 +505,27 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   //G4double ZTranslation= ftrdRadioPosition*cos(ftrdThetaPosition);	//posizione di partenza su asse z da dove posizionare primo layer
   //G4double YTranslation= ftrdRadioPosition*sin(ftrdThetaPosition);
 
-  G4double XTranslation=ftrdRadioPosition*cos(ftrdPhiPosition);
-  G4double YTranslation=0;
-  G4double ZTranslation=-ftrdRadioPosition*sin(ftrdPhiPosition);
+  G4double XTranslation = ftrdRadioPosition*cos(ftrdPhiPosition); //0.8*CLHEP::m ;//
+  G4double YTranslation = 0.*CLHEP::m ;
+  G4double ZTranslation = -ftrdRadioPosition*sin(ftrdPhiPosition); //0.*CLHEP::m ;//
 
-  G4int cpN=1;		// indice numero strato per stampare a video informazioni
+  //G4int cpN=1;		// indice numero strato per stampare a video informazioni
 
-  for(size_t i=0 ; i<trdCollection.size() ; i++) {   		// i counts as the copyNo per loop
+  for(size_t i=0 ; i<boxCollection.size() ; i++) {   		// i counts as the copyNo per loop
 
-	ZTranslation += trdCollection.at(i)->GetXHalfLength1() ;//trasla di mezzo spessore(volume posizionato metà prima e metà dopo)(usa il segno - xchè upstream z negativa)
-	G4double thickness=trdCollection.at(i)->GetXHalfLength1()*2 ;		//prende spessore del volume per stamparlo a video
+	XTranslation += boxCollection.at(i)->GetXHalfLength()*cos(ftrdRadioPosition) ;//trasla di mezzo spessore(volume posizionato metà prima e metà dopo)(usa il segno - xchè upstream z negativa)
+	ZTranslation -= boxCollection.at(i)->GetXHalfLength()*sin(ftrdRadioPosition) ;
 
-    G4cout << "Volume (" << cpN << ") " << trdCollection.at(i)->GetName() << " The thickness is " << thickness << " mm" << " The mean Z position is " << G4BestUnit(ZTranslation,"Length") << " And the start Z thickness position is " << G4BestUnit((ZTranslation-(thickness/2)),"Length") << G4endl ;
+	G4double thickness=boxCollection.at(i)->GetXHalfLength()*2 ;		//prende spessore del volume per stamparlo a video
 
-    G4VPhysicalVolume* trapezoidalPhysic = new G4PVPlacement(		//crea volume fisico
-	  rotationPlacement,							//rotazione
-	  G4ThreeVector(XTranslation,YTranslation,ZTranslation),//(50*cm,YTranslation,ZTranslation),					//vettore posizione, varia solo posizione in Z (distanza sorgente)
-	  trdLogCollection.at(i),						//nome del volume logico
-	  trdCollection.at(i)->GetName(),					//nome volume fisico
-	  fLWorld,								//volume madre in cui posizionare
-	  false,								//pmany
-	  cpN,									//copia numero cpN
-	  fCheckOverlaps) ;							// controllo overlap (se attivato all'inizio file)
+    //G4cout << "Volume (" << cpN << ") " << boxCollection.at(i)->GetName() << " The thickness is " << thickness << " mm" << " The mean X position is " << G4BestUnit(XTranslation,"Length") << " And the start Z thickness position is " << G4BestUnit((XTranslation-(thickness/2)),"Length") << G4endl ;
 
-     ZTranslation += trdCollection.at(i)->GetXHalfLength1() ;			// incremento traslazione della seconda metà dello spessore
-     cpN++;								//incremento indice layer  (si usa il segno - perchè upstream convenzione z è negativa)
+    G4VPhysicalVolume* trapezoidalPhysic = new G4PVPlacement(rotationPlacement, G4ThreeVector(XTranslation,YTranslation,ZTranslation),
+    		boxLogCollection.at(i),boxCollection.at(i)->GetName(), fLWorld,false, 0,fCheckOverlaps) ;			//crea volume fisico
+
+    XTranslation += boxCollection.at(i)->GetXHalfLength()*cos(ftrdRadioPosition) ;			// incremento traslazione della seconda metà dello spessore
+    ZTranslation -= boxCollection.at(i)->GetXHalfLength()*sin(ftrdRadioPosition) ;
+    //cpN++;								//incremento indice layer  (si usa il segno - perchè upstream convenzione z è negativa)
   }
 
 G4cout << "-------------------------------------------------------------------------" << G4endl ;
@@ -568,7 +568,7 @@ void DetectorConstruction::PrintParameters() const
 void DetectorConstruction::SetSizeX(G4double value)
 {
   fAbsorSizeX = value; 
-  fWorldSizeX = 8*m;
+  fWorldSizeX = 4*m;
 }
   
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -576,7 +576,7 @@ void DetectorConstruction::SetSizeX(G4double value)
 void DetectorConstruction::SetSizeYZ(G4double value)
 {
   fAbsorSizeYZ = value; 
-  fWorldSizeYZ = 8*m;
+  fWorldSizeYZ = 4*m;
 }  
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

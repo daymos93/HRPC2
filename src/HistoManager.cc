@@ -22,21 +22,22 @@ void HistoManager::BookHisto()
   fAnalysisManager->SetNtupleMerging(true);
 
   // Create directories
-  fAnalysisManager->SetHistoDirectoryName("histo");
-  fAnalysisManager->SetNtupleDirectoryName("ntuple");
+  //fAnalysisManager->SetHistoDirectoryName("histo");
+  //fAnalysisManager->SetNtupleDirectoryName("ntuple");
 
   // Define histograms start values
   const G4int kMaxHisto = 4;
   //const G4String id[] = { "h0", "h1", "h2", "h3"};
-  const G4String id[] = { "h0", "edep_phantom", "edep_phantom_zoomed", "projectile_range", "sec_neutron", "sec_gamma", "edep_rpc"};
+  const G4String id[] = { "h0", "edep_phantom", "edep_phantom_zoomed", "projectile_range"/*, "sec_neutron", "sec_gamma", "edep_rpc"*/, "dose_phantom"};
   const G4String title[] =
                 { "dummy",                                      //0
-                  "Edep (MeV/mm) along phantom",              	//1
-                  "Edep (MeV/mm) along phantom zoomed",        	//2
+                  "E dep [MeV/mm] along phantom",              	//1
+                  "E dep [MeV/mm] along phantom zoomed",        	//2
                   "Projectile range",							//3
-				  "Secondary neutron radiation produced",		//4
-				  "Secondary gamma radiation produced",			//5
-				  "Edep (MeV/mm) along RPC"						//6
+				  //"Secondary neutron radiation produced",		//4
+				  //"Secondary gamma radiation produced",		//5
+				  //"E dep [MeV/mm] along RPC"					//6
+				  "Dose dep [Gy/mm] along phantom"				//4
                 };
 
   // Default values (to be reset via /analysis/h1/set command)
@@ -52,43 +53,44 @@ void HistoManager::BookHisto()
     if (k == 1) activ = true;
     fAnalysisManager->SetH1Activation(ih, activ);
   }
-  fAnalysisManager->CreateH1(id[4], title[4], 1024, -0, 10000);
-  fAnalysisManager->CreateH1(id[5], title[5], 1024, 0, 150);
-  fAnalysisManager->CreateH1(id[6], title[6], 650, -5, 60);
+  fAnalysisManager->CreateH1(id[4], title[4], 300, 0, 300);
+
+  //fAnalysisManager->CreateH1(id[5], title[5], 1024, 0, 150);
+  //fAnalysisManager->CreateH1(id[6], title[6], 650, -5, 60);
 
   // Define 2D histograms
-  const G4int kMax2DHisto = 12;
-  const G4String id2D[] = { "xy_neutron_TOT", "xy_neutron_TOP", "xy_neutron_BOT",
-		  	  	  	  	  	"xy_gamma_TOT", "xy_gamma_TOP", "xy_gamma_BOT",
-  	  	  	  	  	  	  	"xy_charge_TOT", "xy_charge_GAP1", "xy_charge_GAP2",
-  	  	  	  	  	  	  	"xy_creation_TOT", "xy_creation_GAP1", "xy_creation_GAP2"};
-  const G4String title2D[] =
-                { "Incident neutron X-Y position (TOT)",            //0
-                  "Incident neutron X-Y position (TOP)",            //1
-                  "Incident neutron X-Y position (BOT)",        	//2
-                  "Incident gamma X-Y position (TOT)",				//3
-				  "Incident gamma X-Y position (TOP)",				//4
-				  "Incident gamma X-Y position (BOT)",				//5
-				  "Charge events X-Y position (TOT)",				//6
-				  "Charge events X-Y position (GAP1)",				//7
-				  "Charge events X-Y position (GAP2)",				//8
-				  "Creation events X-Y position (TOT)",				//9
-				  "Creation events X-Y position (GAP1)",			//10
-				  "Creation events X-Y position (GAP2)",			//11
-                };
+  //const G4int kMax2DHisto = 12;
+  //const G4String id2D[] = { "xy_neutron_TOT", "xy_neutron_TOP", "xy_neutron_BOT",
+  //		  	  	  	  	  	"xy_gamma_TOT", "xy_gamma_TOP", "xy_gamma_BOT",
+  //	  	  	  	  	  	  	"xy_charge_TOT", "xy_charge_GAP1", "xy_charge_GAP2",
+  //	  	  	  	  	  	  	"xy_creation_TOT", "xy_creation_GAP1", "xy_creation_GAP2"};
+  //const G4String title2D[] =
+  //              { "Incident neutron X-Y position (TOT)",            //0
+  //                  "Incident neutron X-Y position (TOP)",            //1
+  //                  "Incident neutron X-Y position (BOT)",        	//2
+  //                  "Incident gamma X-Y position (TOT)",				//3
+  //				  "Incident gamma X-Y position (TOP)",				//4
+  //				  "Incident gamma X-Y position (BOT)",				//5
+  //				  "Charge events X-Y position (TOT)",				//6
+  //				  "Charge events X-Y position (GAP1)",				//7
+  //				  "Charge events X-Y position (GAP2)",				//8
+  //				  "Creation events X-Y position (TOT)",				//9
+  //				  "Creation events X-Y position (GAP1)",			//10
+  //				  "Creation events X-Y position (GAP2)",			//11
+ //               };
 
   // Default values (to be reset via /analysis/h1/set command)
-  G4int nbins2D = 1100;
-  G4double lmin = -2000;
-  G4double lmax = 2000;
+  //G4int nbins2D = 1000;
+  //G4double lmin = -1000;
+  //G4double lmax = 1000;
   //G4double ymin = -550;
   //G4double ymax = 550;
 
   // Create 2D histograms
   // as we have not yet set nbins, vmin, vmax
-  for (G4int k=0; k<kMax2DHisto; ++k) {
-	  fAnalysisManager->CreateH2(id2D[k], title2D[k], nbins2D, lmin, lmax, nbins2D, lmin, lmax);
-  	  }
+  //for (G4int k=0; k<kMax2DHisto; ++k) {
+	 // fAnalysisManager->CreateH2(id2D[k], title2D[k], nbins2D, lmin, lmax, nbins2D, lmin, lmax);
+  	 //  }
 
   // Define NTuples
   CreateCounterNtuple("neutron_incident_TOT");	// Create ntuple (id = 0)
@@ -98,7 +100,14 @@ void HistoManager::BookHisto()
   CreateCounterNtuple("gamma_incident_TOP");	// Create ntuple (id = 4)
   CreateCounterNtuple("gamma_incident_BOT");	// Create ntuple (id = 5)
 
-  CreateChargeNtuple("charge_TOT");				// Create ntuple (id = 6)
+  CreateCounterNtuple("neutron_gap_TOT");	// Create ntuple (id = 6)
+  CreateCounterNtuple("neutron_gap_TOP");	// Create ntuple (id = 7)
+  CreateCounterNtuple("neutron_gap_BOT");	// Create ntuple (id = 8)
+  CreateCounterNtuple("gamma_gap_TOT");		// Create ntuple (id = 9)
+  CreateCounterNtuple("gamma_gap_TOP");		// Create ntuple (id = 10)
+  CreateCounterNtuple("gamma_gap_BOT");		// Create ntuple (id = 11)
+
+  /*CreateChargeNtuple("charge_TOT");				// Create ntuple (id = 6)
   CreateChargeNtuple("charge_Gap1");			// Create ntuple (id = 7)
   CreateChargeNtuple("charge_Gap2");			// Create ntuple (id = 8)
 
@@ -117,29 +126,27 @@ void HistoManager::BookHisto()
   	  fAnalysisManager->CreateNtupleDColumn("msc_phenomenons_step");
   	  fAnalysisManager->CreateNtupleDColumn("ionization_phenomenons_step");
   	  fAnalysisManager->CreateNtupleDColumn("eBrem_phenomenons_step");
-  	  fAnalysisManager->FinishNtuple();
+  	  fAnalysisManager->FinishNtuple();*/
 
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void HistoManager::Normalize(G4int nevt){
-//void HistoManager::Normalize(G4int nevt, G4double dose){
 
 	nbofEvents = nevt;
-	//totalDose = dose;
 
     for (G4int j=1; j<3; ++j) {
       G4double binWidth = fAnalysisManager->GetH1Width(j);
       G4double fac = (CLHEP::mm/CLHEP::MeV)/(nbofEvents * binWidth);
-      //G4double fac = (1/totalDose)*(CLHEP::mm/CLHEP::gray)/(nbofEvents * binWidth);
       fAnalysisManager->ScaleH1(j, fac);
     }
 
     fAnalysisManager->ScaleH1(3, 1./nbofEvents);
 
-    G4double fac2 = (CLHEP::mm/CLHEP::MeV)/(nbofEvents * (fAnalysisManager->GetH1Width(6)));
-    fAnalysisManager->ScaleH1(6, fac2);
+    G4double fac2 = (1/CLHEP::gray)/(nbofEvents * fAnalysisManager->GetH1Width(4));
+
+    fAnalysisManager->ScaleH1(4, fac2);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -250,8 +257,8 @@ void HistoManager::FillLastHisto(){
 
 		//compute sensitivity
 		sensitivity = (p_charge_sensitivity/neutron_incident_sensitivity)*100;	// calcolo sensitività
-		fAnalysisManager->CreateH1("sensitivity","sensitivity",10,0,2);  //Id = 7
-		fAnalysisManager->FillH1(7,sensitivity);
-		fAnalysisManager->SetH1YAxisTitle(5,"sensitivity %");
+		fAnalysisManager->CreateH1("sensitivity","sensitivity",10,0,2);  //Id = 4
+		fAnalysisManager->FillH1(4,sensitivity);
+		fAnalysisManager->SetH1YAxisTitle(4,"sensitivity %");
 	}
 }

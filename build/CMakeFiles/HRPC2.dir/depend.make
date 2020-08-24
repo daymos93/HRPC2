@@ -119,6 +119,8 @@ CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.hh
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.icc
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BoundingEnvelope.hh
+CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.hh
+CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.icc
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4CSGSolid.hh
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Cache.hh
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4CacheDetails.hh
@@ -322,6 +324,7 @@ CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Trd.icc
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Types.hh
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UAdapter.hh
+CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UBox.hh
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIExecutive.hh
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcommand.hh
 CMakeFiles/HRPC2.dir/HRPC2.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcommandStatus.hh
@@ -890,6 +893,8 @@ CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ApplicationState.hh
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AutoLock.hh
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BoundingEnvelope.hh
+CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.hh
+CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.icc
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4CSGSolid.hh
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4EnvironmentUtils.hh
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Exception.hh
@@ -911,6 +916,7 @@ CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Trd.icc
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Types.hh
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UAdapter.hh
+CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UBox.hh
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcmdWithADoubleAndUnit.hh
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcmdWithAString.hh
 CMakeFiles/HRPC2.dir/src/DetectorMessenger.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcmdWithAnInteger.hh
@@ -2880,6 +2886,8 @@ CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ApplicationState.hh
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4AutoLock.hh
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BoundingEnvelope.hh
+CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.hh
+CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.icc
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4CSGSolid.hh
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DCofThisEvent.hh
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4EnvironmentUtils.hh
@@ -2916,6 +2924,7 @@ CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Trd.icc
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Types.hh
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UAdapter.hh
+CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UBox.hh
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcommand.hh
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIdirectory.hh
 CMakeFiles/HRPC2.dir/src/PrimaryGeneratorAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UImessenger.hh
@@ -3107,6 +3116,8 @@ CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.hh
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.icc
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BoundingEnvelope.hh
+CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.hh
+CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.icc
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4CSGSolid.hh
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Cache.hh
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4CacheDetails.hh
@@ -3280,6 +3291,7 @@ CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Trd.icc
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Types.hh
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UAdapter.hh
+CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UBox.hh
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcommand.hh
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIdirectory.hh
 CMakeFiles/HRPC2.dir/src/RunAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UImessenger.hh
@@ -3932,6 +3944,8 @@ CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/g
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.hh
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.icc
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BoundingEnvelope.hh
+CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.hh
+CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.icc
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4CSGSolid.hh
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ClassificationOfNewTrack.hh
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DCofThisEvent.hh
@@ -4093,6 +4107,7 @@ CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/g
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Trd.icc
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Types.hh
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UAdapter.hh
+CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UBox.hh
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcommand.hh
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIdirectory.hh
 CMakeFiles/HRPC2.dir/src/SteppingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UImessenger.hh
@@ -4708,6 +4723,8 @@ CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/g
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.hh
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BlockingList.icc
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4BoundingEnvelope.hh
+CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.hh
+CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Box.icc
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4CSGSolid.hh
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4ClassificationOfNewTrack.hh
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4DCofThisEvent.hh
@@ -4869,6 +4886,7 @@ CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/g
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Trd.icc
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4Types.hh
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UAdapter.hh
+CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UBox.hh
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIcommand.hh
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UIdirectory.hh
 CMakeFiles/HRPC2.dir/src/TrackingAction.cc.o: /home/dayron/Applications/Geant4/geant4-install/include/Geant4/G4UImessenger.hh

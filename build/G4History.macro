@@ -1,0 +1,25 @@
+/run/verbose 2
+/run/initialize
+/run/dumpRegion 1
+/vis/open OGL
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600
+/vis/viewer/refresh
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/geometry/set/visibility logic-World 0 false
+/vis/geometry/set/colour logic-Target 0 0 0 255 0.3
+/vis/scene/add/axes
+/vis/scene/notifyHandlers
+/vis/scene/add/scale
+/vis/scene/notifyHandlers
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/scene/endOfEventAction accumulate 100
+/vis/viewer/set/viewpointThetaPhi -40 -50
+/vis/viewer/refresh
+/run/beamOn 1
+/vis/scene/notifyHandlers scene-0

@@ -111,6 +111,8 @@ void RunAction::EndOfRunAction(const G4Run* aRun)
 
   //compute energy deposition, total dose and niel
   //
+
+
   fEdeptot /= nbofEvents;
 
   G4double fAbsorMass = fDetector->GetAbsorMass();
@@ -146,8 +148,8 @@ void RunAction::EndOfRunAction(const G4Run* aRun)
 
   if (histo->fAnalysisManager->IsActive() ) {
     // normalize histograms
-	  G4double fAbsorMass = fDetector->GetAbsorMass();
-	  G4double totalDose = fEdeptot/fAbsorMass;
+	  /*G4double fAbsorMass = fDetector->GetAbsorMass();
+	  G4double totalDose = fEdeptot/fAbsorMass;*/
 
 	  //histo->FillLastHisto();
 
@@ -160,15 +162,17 @@ void RunAction::EndOfRunAction(const G4Run* aRun)
       histo->fAnalysisManager->ScaleH1(j, fac);
     }
     histo->fAnalysisManager->ScaleH1(3, 1./nbofEvents);*/
- 
+
     // save histograms
 	  histo->Save();
-    /*histo->fAnalysisManager->Write();
-    histo->fAnalysisManager->CloseFile();
-    delete histo->fAnalysisManager;
-    histo->fAnalysisManager = 0;*/
-  }
-   
+
+	//histo->fAnalysisManager->Write();
+	//histo->fAnalysisManager->CloseFile();
+    //delete histo->fAnalysisManager;
+    //histo->fAnalysisManager = 0;
+
+    //G4cout<< "I'm here" << G4endl;
+   }
   // show Rndm status
   //
   CLHEP::HepRandom::showEngineStatus();
